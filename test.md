@@ -1,6 +1,7 @@
 ## Cheesy Steak Sandwich
 
 ### Ingredients:
+
 - 300g steak (such as sirloin or ribeye)
 - 4 slices of cheese (such as cheddar or Swiss)
 - 4 bread rolls
@@ -8,6 +9,7 @@
 - Salt and pepper (to taste)
 
 ### Instructions:
+
 1. Start by preheating a grill or a frying pan over medium-high heat.
 2. Season the steak with salt and pepper on both sides.
 3. Cook the steak for 3-4 minutes per side, or until desired level of doneness is reached. Remove from heat and let it rest for a few minutes.
