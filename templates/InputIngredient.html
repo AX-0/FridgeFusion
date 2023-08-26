@@ -2,42 +2,54 @@
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Allan&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="templates/logo_favicon.ico">
+
 <style>
   body {
     font-family: "Allan", sans-serif;
     background-color: #F7EDE2;
     margin: 0;
     padding: 20px;
+    justify-content: center;
   }
-
+  
   .header {
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-
-  .logo {
-    width: 70pt;
-    height: 70pt;
+    background-color: #F5CAC3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
   }
 
   .title {
-    font-size: 70pt;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    text-align: center;
+    font-size: 50pt;
+    margin-top: 120px; 
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 40pt;
+    height: 40pt;
+    margin-right: 20px;
+    border-radius: 10px;
   }
 
   .input-section {
     margin-top: 20px;
-    text-align: center
+    margin-left: 300px;
+    /* margin-right: auto;  */
+    /* text-align: center; */
+    width: 1500px;
   }
-
+  
   input[type="text"] {
     width: 50%;
-    padding: 25px;
-    font-size: 25px;
-    background-color: #F5CAC3;
+    padding: 10px;
+    font-size: 15px;
+    background-color: white;
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -47,142 +59,104 @@
     border: none;
     background-color: #F7EDE2;
     width: 100px;
-    border-bottom: 1px solid black; /* Underline-style border */
-    padding: 5px; /* Adjust padding as needed */
-    font-size: 20px; /* Adjust font size as needed */
+    border-bottom: 1px solid black; 
+    padding: 5px; 
+    font-size: 20px;
   }
-
+  
   .section-title {
     font-size: 35pt;
     margin-top: 20px;
     margin-left: 20%;
-    margin-bottom: 20px;
-  }
-
-  .checkbox-row {
-    margin-left: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    }
-
-  .checkbox-group {
-    font-size: 30pt;
-    display: flex;
-    flex-direction: row;
-    gap: 80px
-  }
-
-  .checkbox-item {
-    display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    width: 40%;
+    margin-bottom: 20px;
+    height:50px;
   }
 
-  .checkbox-label {
-    margin-left: 10px;
+  .filter {
+    width: 850px;
+    padding: 25px;
+    border: 1px solid black;
+    margin: 25px;
   }
 
-  .submit-button {
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 20pt;
-    background-color: #84A59D;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 30px;
-    justify-content: center
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
   }
+
+  td {
+    width: 200px;
+    padding: 8px;
+  }
+  
+.submit-button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 21pt;
+  background-color: #84A59D;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center
+} 
 </style>
 </head>
 <body>
 
 <div class="header">
-  <img href="/static/logo2.png" alt="Logo" class="logo">
-  <h1 class="title">Enter Ingredients</h1>
+    <img src="logo.png" alt="Logo" class="logo">
 </div>
+<div class="title">Recipe Details</div>
 
 <div class="input-section">
   <input type="text" placeholder="Enter ingredients...">
 </div>
 
 <div class="section-title">Dietary Requirements</div>
-<div class="checkbox-row">
-<div class="checkbox-group">
-  <div class="checkbox-item">
-    <input type="checkbox" id="Vegan">
-    <label class="checkbox-label" for="vegan">Vegan</label>
-  </div>
-  <div class="checkbox-item">
-    <input type="checkbox" id="Vegetarian">
-    <label class="checkbox-label" for="Vegetarian">Vegetarian</label>
-  </div>
-  <div class="checkbox-item">
-    <input type="checkbox" id="Halal">
-    <label class="checkbox-label" for="Halal">Halal</label>
-  </div>
-  <div class="checkbox-item">
-    <input type="checkbox" id="Kosher">
-    <label class="checkbox-label" for="Kosher">Kosher</label>
-  </div>
-</div>
-</div>
-<div class="checkbox-row">
-<div class="checkbox-group">
-  <div class="checkbox-item">
-    <input type="checkbox" id="Lactose-free">
-    <label class="checkbox-label" for="Lactose-free">Lactose-free</label>
-  </div>
-  <div class="checkbox-item">
-    <input type="checkbox" id="Gluten-free">
-    <label class="checkbox-label" for="Gluten-free">Gluten-free</label>
-  </div>
-  <div class="input-group">
-  <div class="checkbox-item">
-    <input type="checkbox" id="other-dietary">
-    <label style="margin-left: 0px;" class="checkbox-label" for="other-dietary">Other</label>
-    <input style="margin-left: 5px; padding: 1px; font-size: 20px;" type="text">
-  </div>
-  </div>
-</div>
+<div class="table-container">
+<from action="" method = "post">
+<form method="post"></form>
+<table>
+  <tr class="wider-row">
+    <td><input type="checkbox" name = Dietary, val = Vegan, rel="Vegan" />Vegan</td>
+    <td><input type="checkbox" name = Dietary, val = Vegetarian, rel="Vegetarian" />Vegetarian</td>
+    <td><input type="checkbox" name = Dietary, val = Halal, rel="Halal" />Halal</td>
+    <td><input type = "checkbox" name = Dietary, val = Kosher, rel = "Kosher" />Kosher</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name = Dietary, val = Lactose-free, rel="Lactose-free" />Lactose-free</td>
+    <td><input type="checkbox" name = Dietary, val = Gluten-free, rel="Gluten-free" />Gluten-free</td>
+    <td><input type = "checkbox" name = Dietary, val = other-dietar, rel="other-dietary">Other
+        <input style="width: 40px; margin-left: 5px; padding: 1px; font-size: 20px;" rel="other-dietary" type="text"></td>  
+  </tr>
+</table>
+</from>
 </div>
 
+
 <div class="section-title">Allergies</div>
-<div class="checkbox-row">
-<div class="checkbox-group">
-  <div class="checkbox-item">
-    <input type="checkbox" id="wheat">
-    <label class="checkbox-label" for="wheat">Wheat</label>
-  </div>
-  <div class="checkbox-item">
-    <input type="checkbox" id="nut">
-    <label class="checkbox-label" for="nut">Nut</label>
-  </div>
-  <div class="checkbox-item">
-    <input type="checkbox" id="egg">
-    <label class="checkbox-label" for="egg">Egg</label>
-  </div>
-  <div class="checkbox-item">
-    <input type="checkbox" id="fish">
-    <label class="checkbox-label" for="fish">Fish</label>
-  </div>
-</div>
-<div class="checkbox-row">
-<div class="checkbox-group">
-  <div class="checkbox-item">
-    <input type="checkbox" id="shellfish">
-    <label class="checkbox-label" for="shellfish">Shellfish</label>
-  </div>
-  <div class="checkbox-item">
-    <input type="checkbox" id="other-allergies">
-    <label class="checkbox-label" for="other-allergies">Other</label>
-    </div>
-  </div>
-</div>
-</div>
+<div class="table-container">
+  <from action="" method = "post">
+  <table>
+    <tr class="wider-row">
+      <td><input type="checkbox" name = Allergies, val = Wheat, rel="Wheat" />Wheat</td>
+      <td> <input type="checkbox" name = Allergies, val = Nut, rel="Nut" />Nut</td>
+      <td><input type="checkbox" name = Allergies, val = Egg, rel="Egg" />Egg</td>
+      <td><input type="checkbox" name = Allergies, val = Fish, rel="Fish" />Fish</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name = Allergies, val = Shellfish, rel="Shellfish" />Shellfish</td>
+      <td><input type = "checkbox" name = Allergies, val = Other, rel="Other">Other
+          <input style="width: 40px; margin-left: 5px; padding: 1px; font-size: 20px;" rel="other-dietary" type="text"></td>  
+      </tr>
+  </table>
+  </from>
 </div>
 
 <center><button class="submit-button">Submit</button></center>
