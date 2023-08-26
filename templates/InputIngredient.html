@@ -51,8 +51,6 @@
   .input-section {
     margin-top: 20px;
     margin-left: 300px;
-    /* margin-right: auto;  */
-    /* text-align: center; */
     width: 1500px;
   }
   
@@ -121,42 +119,39 @@
 <body>
 
 <div class="header">
-
-    
+    <div class="logo">
+      <a href="{{ url_for('home') }}"><img src="/static/logo.png" alt="Logo"></a>
+    </div>
   <div class="company-name">
       <h1>Fridge Fusion</h1>
   </div>
-  </div>
-
-   
-
-  <a href="HomePage.html">
-    <img src="/static/logo.png" alt="Logo" class="logo"></a>
-
 </div>
 <div class="title">Recipe Details</div>
 
-<div class="input-section">
-  <input type="text" placeholder="Enter ingredients...">
-</div>
-<div class="section-title">Dietary Requirements</div>
+
+
 <div class="table-container">
 
-<from action="/recipe" method = "post">
+<form action="{{ url_for('recipe') }}" method="post">
+  <div class="input-section">
+    <input type="text" name="ingredients" placeholder="Enter ingredients...">
+  </div>
+  <div class="section-title">Dietary Requirements</div>
 <table>
   <tr class="wider-row">
-    <td><input type="checkbox" name = Dietary, val = Vegan, rel="Vegan" />Vegan</td>
-    <td><input type="checkbox" name = Dietary, val = Vegetarian, rel="Vegetarian" />Vegetarian</td>
-    <td><input type="checkbox" name = Dietary, val = Halal, rel="Halal" />Halal</td>
-    <td><input type = "checkbox" name = Dietary, val = Kosher, rel = "Kosher" />Kosher</td>
+    <td><input type="checkbox" name = "dietary" value ="Vegan" rel="Vegan" />Vegan</td>
+    <td><input type="checkbox" name = "dietary" value = "Vegetarian" rel="Vegetarian" />Vegetarian</td>
+    <td><input type="checkbox" name = "dietary" value = "Halal" rel="Halal" />Halal</td>
+    <td><input type = "checkbox" name = "dietary" value = "Kosher" rel = "Kosher" />Kosher</td>
   </tr>
   <tr>
-    <td><input type="checkbox" name = Dietary, val = Lactose-free, rel="Lactose-free" />Lactose-free</td>
-    <td><input type="checkbox" name = Dietary, val = Gluten-free, rel="Gluten-free" />Gluten-free</td>
-    <td><input type = "checkbox" name = Dietary, val = other-dietar, rel="other-dietary">Other
+    <td><input type="checkbox" name = "dietary" value = "Lactose-free" rel="Lactose-free" />Lactose-free</td>
+    <td><input type="checkbox" name = "dietary" value = "Gluten-free" rel="Gluten-free" />Gluten-free</td>
+    <td><input type ="checkbox" name = "dietary" value = "other-dietary" rel="other-dietary">Other
         <input style="width: 40px; margin-left: 5px; padding: 1px; font-size: 20px;" rel="other-dietary" type="text"></td>  
   </tr>
 </table>
+
 </div>
 
 
@@ -164,19 +159,19 @@
 <div class="table-container">
   <table>
     <tr class="wider-row">
-      <td><input type="checkbox" name = Allergies, val = Wheat, rel="Wheat" />Wheat</td>
-      <td> <input type="checkbox" name = Allergies, val = Nut, rel="Nut" />Nut</td>
-      <td><input type="checkbox" name = Allergies, val = Egg, rel="Egg" />Egg</td>
-      <td><input type="checkbox" name = Allergies, val = Fish, rel="Fish" />Fish</td>
+      <td><input type="checkbox" name = "allergies" value =Wheat, rel="Wheat" />Wheat</td>
+      <td> <input type="checkbox" name = "allergies" value =Nut, rel="Nut" />Nut</td>
+      <td><input type="checkbox" name = "allergies" value = Egg, rel="Egg" />Egg</td>
+      <td><input type="checkbox" name = "allergies" value = Fish, rel="Fish" />Fish</td>
     </tr>
     <tr>
-      <td><input type="checkbox" name = Allergies, val = Shellfish, rel="Shellfish" />Shellfish</td>
-      <td><input type = "checkbox" name = Allergies, val = Other, rel="Other">Other
+      <td><input type="checkbox" name = "allergies" value = Shellfish, rel="Shellfish" />Shellfish</td>
+      <td><input type="checkbox" name = "allergies" value = Other, rel="Other">Other
           <input style="width: 40px; margin-left: 5px; padding: 1px; font-size: 20px;" rel="other-dietary" type="text"></td>  
       </tr>
   </table>
 </div>
 <center><button type = "submit" class="submit-button">Submit</button></center>
-</from>
+</form>
 </body>
 </html>

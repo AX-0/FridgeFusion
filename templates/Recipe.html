@@ -2,6 +2,7 @@
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Allan&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
 <style>
   body {
     font-family: "Allan", sans-serif;
@@ -136,7 +137,7 @@
 
   <div class="header">
       <div class="logo">
-        <a href="HomePage.html"><img src="logo.png" alt="Logo"></a>
+        <a href="{{ url_for('home') }}"><img src="/static/logo.png" alt="Logo"></a>
       </div>
     <div class="company-name">
         <h1>Fridge Fusion</h1>
@@ -148,13 +149,13 @@
 <div class="share-button">
   <div class="indivbutton">
   <a href="#" id="fb-messenger-share">
-      <img src="facebook-icon.png" alt="Facebook Messenger" class="facebook-icon">
+      <img src="/static/facebook-icon.png" alt="Facebook Messenger" class="facebook-icon">
       Share on Facebook
   </a>
   </div>
   <div class="indivbutton">
   <a href="#" id="twitter-share">
-      <img src="twitter-icon.png" alt="Twitter Share Post" class="twitter-icon">
+      <img src="/static/twitter-icon.png" alt="Twitter Share Post" class="twitter-icon">
       Share on X (Twitter)
   </a>
   </div>
@@ -174,9 +175,13 @@
 <div class="parent">
 <div class="container">
   <div class="section-title">Recipe Steps</div>
-  <div class="step">Step 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+  <div id="markdown-content"></div>
+  <div id="md-content">
+    {{ markdown_content|safe }}
+  </div>
+  <!-- <div class="step">Step 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
   <div class="step">Step 2: Nulla id odio a ante consectetur venenatis.</div>
-  <div class="step">Step 3: Sed lacinia turpis vel ante vestibulum tristique.</div>
+  <div class="step">Step 3: Sed lacinia turpis vel ante vestibulum tristique.</div> -->
 </div>
 </div>
 
@@ -196,5 +201,6 @@
       window.open(shareUrl, '_blank', 'width=600,height=400');
   });
 </script>
+
 </body>
 </html>
