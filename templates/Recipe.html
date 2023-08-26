@@ -11,19 +11,22 @@
     justify-content: center;
   }
   
+  .header {
+    background-color: #F5CAC3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+  }
+
   .title {
     text-align: center;
     font-size: 50pt;
-    margin-bottom: 20px;
-  }
-
-  .header {
-    background-color: #F5CAC3;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #ccc; /* Line after the header */
-    margin-bottom: 40px;
+    margin-top: 120px; 
+    margin-bottom: 30px;
   }
 
   .logo {
@@ -31,13 +34,6 @@
     height: 40pt;
     margin-right: 20px;
     border-radius: 10px;
-  }
-
-  .bigcontainer {
-    background-color: F5CAC3;
-    margin-left: 40px;
-    margin-right: 40px;
-
   }
 
   .container {
@@ -86,6 +82,38 @@
     cursor: pointer;
     border-radius: 10px;
   }
+
+  .share-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .share-button button,
+  .share-button a {
+    background-color: #F6BD60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .instagram-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .facebook-icon {
+    width: 20px;
+    height: 20px;
+  }
+
 </style>
 </head>
 
@@ -122,5 +150,30 @@
   <button class="button">Order ingredients</button>
 </div>
 
+<div class="share-button">
+  <a href="#" id="fb-messenger-share">
+      <img src="facebook-icon.png" alt="Facebook Messenger" class="facebook-icon">
+      Share on Messenger
+  </a>
+  
+  <a href="#" id="insta-dm-share">
+      <img src="instagram-icon.png" alt="Instagram Direct Message" class="instagram-icon">
+      Share on Insta
+  </a>
+</div>
+
+
+<script>
+  document.getElementById('fb-messenger-share').addEventListener('click', function() {
+      var shareUrl = 'https://www.facebook.com/dialog/send?app_id=dotori0409&link=' + encodeURIComponent(window.location.href);
+      window.open(shareUrl, '_blank', 'width=600,height=400');
+  });
+
+  document.getElementById('insta-dm-share').addEventListener('click', function() {
+      var instaUsername = 'do_02v';
+      var shareUrl = 'https://www.instagram.com/' + instaUsername + '/?utm_source=ig_web_copy_link';
+      window.open(shareUrl, '_blank', 'width=600,height=400');
+  });
+</script>
 </body>
 </html>
