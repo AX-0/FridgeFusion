@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Allan&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: "Allan", sans-serif;
+    background-color: #F7EDE2;
+    margin: 0;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .header {
+    background-color: #F5CAC3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 50pt;
+    margin-top: 120px; 
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 40pt;
+    height: 40pt;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+  .bigcontainer {
+    background-color: F5CAC3;
+    margin-left: 40px;
+    margin-right: 40px;
+
+  }
+
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+  }
+
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-title {
+    font-size: 25pt;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .step {
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 12pt;
+    background-color: #84A59D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <img src="/static/logo.png" alt="Logo" class="logo">
+    
+</div>
+<div class="title">Recipe Name</div>
+
+
+<div class="parent">
+<div class="container">
+  <div class="section-title">Ingredients</div>
+  <ul>
+    <li>Ingredient 1</li>
+    <li>Ingredient 2</li>
+    <li>Ingredient 3</li>
+  </ul>
+</div>
+</div>
+
+<div class="parent">
+<div class="container">
+  <div class="section-title">Recipe Steps</div>
+  <div class="step">Step 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+  <div class="step">Step 2: Nulla id odio a ante consectetur venenatis.</div>
+  <div class="step">Step 3: Sed lacinia turpis vel ante vestibulum tristique.</div>
+</div>
+</div>
+
+<div class="buttons">
+  <button class="button">Regenerate</button>
+  <button class="button">Order ingredients</button>
+</div>
+
+</body>
+</html>
