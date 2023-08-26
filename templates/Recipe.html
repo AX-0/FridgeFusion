@@ -89,18 +89,22 @@
     gap: 10px;
     margin-top: 20px;
   }
-  
+
+  .indivbutton {
+    margin-left: 10px;
+    text-align: right;
+  }
+
   .share-button button,
   .share-button a {
-    background-color: #F6BD60;
-    color: white;
+    background-color: #F7EDE2;
+    color: black;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
+    margin-bottom: 20px;
     cursor: pointer;
     text-decoration: none;
     display: flex;
-    align-items: center;
     gap: 5px;
   }
 
@@ -125,6 +129,20 @@
 </div>
 <div class="title">Recipe Name</div>
 
+<div class="share-button">
+  <div class="indivbutton">
+  <a href="#" id="fb-messenger-share">
+      <img src="facebook-icon.png" alt="Facebook Messenger" class="facebook-icon">
+      Share on Facebook
+  </a>
+  </div>
+  <div class="indivbutton">
+  <a href="#" id="insta-dm-share">
+      <img src="instagram-icon.png" alt="Instagram Direct Message" class="instagram-icon">
+      Share on Instagram
+  </a>
+  </div>
+</div>
 
 <div class="parent">
 <div class="container">
@@ -150,19 +168,6 @@
   <button class="button">Regenerate</button>
   <button class="button">Order ingredients</button>
 </div>
-
-<div class="share-button">
-  <a href="#" id="fb-messenger-share">
-      <img src="facebook-icon.png" alt="Facebook Messenger" class="facebook-icon">
-      Share on Messenger
-  </a>
-  
-  <a href="#" id="insta-dm-share">
-      <img src="instagram-icon.png" alt="Instagram Direct Message" class="instagram-icon">
-      Share on Insta
-  </a>
-</div>
-
 
 <script>
   document.getElementById('fb-messenger-share').addEventListener('click', function() {
