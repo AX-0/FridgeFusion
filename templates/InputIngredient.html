@@ -40,12 +40,7 @@
   .input-section {
     margin-top: 20px;
     margin-left: 300px;
-<<<<<<< HEAD
     border-radius: 12px;
-=======
-    /* margin-right: auto;  */
-    /* text-align: center; */
->>>>>>> 49f46f954644049486229979fd1a56d9daddfff6
     width: 1500px;
   }
   
@@ -114,12 +109,7 @@
 <body>
 
 <div class="header">
-<<<<<<< HEAD
     <img src="logo.png" alt="Logo" class="logo">
-=======
-  <a href="HomePage.html">
-    <img src="/static/logo.png" alt="Logo" class="logo"></a>
->>>>>>> 49f46f954644049486229979fd1a56d9daddfff6
 </div>
 <div class="title">Recipe Details</div>
 
@@ -129,7 +119,7 @@
 <div class="section-title">Dietary Requirements</div>
 <div class="table-container">
 
-<from action="/recipe" method = "post">
+<from action="/recipe" method = "post" action="{{ url_for('search_lecture') }}">
 <table>
   <tr class="wider-row">
     <td><input type="checkbox" name = Dietary, val = Vegan, rel="Vegan" />Vegan</td>

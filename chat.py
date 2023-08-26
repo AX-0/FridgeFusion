@@ -29,8 +29,8 @@ def ask_gpt(prompt):
 
 ########################## test #############################
 
-test_ingredient = ["milk", "bread", "fried egg", "steak"]
-test_dietry = ["vegan", "lactose-free"]
+test_ingredient = ["milk", "bread", "fried egg", "steak", "shoe"]
+test_dietry = ["lactose-free"]
 test_allergies = ["wheat", "nut"]
 
 ######################## end test ###########################
@@ -46,11 +46,13 @@ dietry_list_string = '. '.join(dietry_list)
 allergies_list = test_allergies
 allergies_list_string = '. '.join(allergies_list)
 
-prompt_string = "Give me a recipe with this list of food: " + food_list_string + ". "
+prompt_string = "I have some leftovers. Give me a recipe with this list of ingridient: " + food_list_string + ". "
 prompt_dietry = "Here is the dietry requirements: " + dietry_list_string + ". "
 prompt_allergies = "Here is the allergies list: " + allergies_list_string + ". "
-prompt_format = "Give the answer in markdown format."
-prompt_full = prompt_string + prompt_dietry + prompt_dietry + prompt_allergies + prompt_format
+prompt_format = "Give the answer in markdown format. "
+prompt_sanitizing = "If there are any food you don't recognize or does not match the dietry or allergies requirements, ignore them and display them at the very start. "
+prompt_extra = "If there is not enough ingredient to create recipes, then show recipes with some extra ingredients and highlight them."
+prompt_full = prompt_string + prompt_dietry + prompt_dietry + prompt_allergies + prompt_format + prompt_sanitizing + prompt_extra
 
 print(prompt_full)
 response_md = ask_gpt(prompt_full)
