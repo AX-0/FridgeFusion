@@ -12,4 +12,4 @@ def home():
 
 @app.route('/recipe', methods = ['POST', 'GET'])
 def recipe():
-    return render_template("Recipe.html")
+    return render_template("inputIngredient.html")
