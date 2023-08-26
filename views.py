@@ -8,13 +8,8 @@ app = Flask(__name__)
 
 @app.route("/", methods=['POST', 'GET'])
 def home():
-    return render_template("InputIngredient.html")
+    return render_template("HomePage.html")
 
 @app.route('/recipe', methods = ['POST', 'GET'])
 def recipe():
     return render_template("index.html")
-
-# @app.route()
-
-
-
