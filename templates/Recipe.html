@@ -20,6 +20,8 @@
     padding: 20px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
   }
 
   .title {
@@ -29,11 +31,20 @@
     margin-bottom: 30px;
   }
 
-  .logo {
+  .logo img{
     width: 40pt;
     height: 40pt;
     margin-right: 20px;
     border-radius: 10px;
+  }
+
+  .company-name {
+    text-align: left;
+  }
+
+.company-name h1 {
+      margin: 0;
+      font-size: 24px;
   }
 
   .container {
@@ -123,11 +134,15 @@
 
 <body>
 
-<div class="header">
-  <a href="HomePage.html">
-    <img src="logo.png" alt="Logo" class="logo"></a>
-    
-</div>
+  <div class="header">
+      <div class="logo">
+        <a href="HomePage.html"><img src="logo.png" alt="Logo"></a>
+      </div>
+    <div class="company-name">
+        <h1>Fridge Fusion</h1>
+    </div>
+    </div>
+  </div>
 <div class="title">Recipe Name</div>
 
 <div class="share-button">
