@@ -17,7 +17,7 @@ def home2():
 
 @app.route('/input', methods = ['POST', 'GET'])
 def input():    
-    return render_template("InputIngredient.html")
+    return render_template("RecipeDetails.html")
 
 @app.route('/recipe', methods = ['POST', 'GET'])
 def recipe():
