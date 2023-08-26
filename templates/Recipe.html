@@ -11,19 +11,22 @@
     justify-content: center;
   }
   
+  .header {
+    background-color: #F5CAC3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+  }
+
   .title {
     text-align: center;
     font-size: 50pt;
-    margin-bottom: 20px;
-  }
-
-  .header {
-    background-color: #F5CAC3;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #ccc; /* Line after the header */
-    margin-bottom: 40px;
+    margin-top: 120px; 
+    margin-bottom: 30px;
   }
 
   .logo {
@@ -92,10 +95,11 @@
 <body>
 
 <div class="header">
-    <img src="logo.png" alt="Logo" class="logo">
+    <img src="/static/logo.png" alt="Logo" class="logo">
+    
 </div>
-
 <div class="title">Recipe Name</div>
+
 
 <div class="parent">
 <div class="container">
