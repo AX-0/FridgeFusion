@@ -4,30 +4,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="static/logo_favicon.ico">
     <head>
         <style>
-            button {
-                display: block;
-                margin: 0 auto;
+            /* styles.css */
+            body {
+                margin: 0;
+                padding: 0;
+                background: url('../static/homebg.png') no-repeat center center fixed;
+                background-size: cover;
                 font-family: "Allan", sans-serif;
+                color: #F7EDE2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
             }
 
-            body {
-                background-image: url({{ url_for('static', filename='homebg.png') }});
-                background-repeat: no-repeat;
-                background-size: cover;
+            .container {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .logo {
+                margin-bottom: 20px;
+            }
+
+            .logo img {
+                width: 90px;
+                length: 90px;
+                border-radius: 20px;
+            }
+
+            .title {
+                font-size: 100px;
+                margin-bottom: 20px;
+            }
+
+            .action-button {
+                padding: 10px 30px;
+                font-size: 25px;
+                background-color: #F6BD60;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                border-radius: 30px;
+            }
+
+            .action-button:hover {
+                background-color: #f7d9a8;
             }
         </style>
     </head>
 
     <body>
-        <section class="text-gray-600 body-font">
-            <div  class="h-screen flex items-center justify-center">
-                <form action="{{ url_for('recipe') }}" method="GET">
-                <button type="submit" class="bg-yellow-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded font-Allan">Start</button>
-                </form>
+        <div class="container">
+            <div class="logo">
+                <center><img src="/static/logo.png" alt="Logo"></center>
             </div>
-        </section>
+            <b><h1 class="title">Fridge Fusion</h1></b>
+            <a href="{{ url_for('recipe') }}"><button class="action-button">Start</button></a>
+        </div>
     </body>
 </html>
