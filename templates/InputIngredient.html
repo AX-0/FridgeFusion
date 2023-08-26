@@ -13,6 +13,7 @@
   .header {
     display: flex;
     align-items: center;
+    justify-content: center
   }
 
   .logo {
@@ -23,31 +24,46 @@
   .title {
     font-size: 70pt;
     margin-left: 20px;
+    margin-bottom: 10px;
   }
 
   .input-section {
-    margin-top: 50px;
+    margin-top: 20px;
+    text-align: center
   }
 
   input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
+    width: 50%;
+    padding: 25px;
+    font-size: 25px;
     background-color: #F5CAC3;
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
   }
 
+  .input-group input {
+    border: none;
+    background-color: #F7EDE2;
+    width: 100px;
+    border-bottom: 1px solid black; /* Underline-style border */
+    padding: 5px; /* Adjust padding as needed */
+    font-size: 20px; /* Adjust font size as needed */
+  }
+
   .section-title {
     font-size: 35pt;
     margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 20px;
   }
 
   .checkbox-row {
+    margin-left: 20%;
     display: flex;
-    gap: 20px; /* Gap between checkbox groups */
-  }
+    flex-wrap: wrap;
+    gap: 20px;
+    }
 
   .checkbox-group {
     font-size: 30pt;
@@ -60,6 +76,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    width: 40%;
   }
 
   .checkbox-label {
@@ -68,14 +85,15 @@
 
   .submit-button {
     display: inline-block;
-    padding: 15px 30px;
-    font-size: 35pt;
+    padding: 5px 10px;
+    font-size: 20pt;
     background-color: #84A59D;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 30px;
+    justify-content: center
   }
 </style>
 </head>
@@ -121,30 +139,52 @@
     <input type="checkbox" id="Gluten-free">
     <label class="checkbox-label" for="Gluten-free">Gluten-free</label>
   </div>
+  <div class="input-group">
   <div class="checkbox-item">
     <input type="checkbox" id="other-dietary">
-    <label class="checkbox-label" for="other-dietary">Other</label>
-    <input style="margin-left:20px" type="text" placeholder="Specify">
+    <label style="margin-left: 0px;" class="checkbox-label" for="other-dietary">Other</label>
+    <input style="margin-left: 5px; padding: 1px; font-size: 20px;" type="text">
+  </div>
   </div>
 </div>
 </div>
 
 <div class="section-title">Allergies</div>
+<div class="checkbox-row">
 <div class="checkbox-group">
   <div class="checkbox-item">
     <input type="checkbox" id="wheat">
     <label class="checkbox-label" for="wheat">Wheat</label>
   </div>
-  <!-- Add more checkboxes here -->
-
+  <div class="checkbox-item">
+    <input type="checkbox" id="nut">
+    <label class="checkbox-label" for="nut">Nut</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" id="egg">
+    <label class="checkbox-label" for="egg">Egg</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" id="fish">
+    <label class="checkbox-label" for="fish">Fish</label>
+  </div>
+</div>
+<div class="checkbox-row">
+<div class="checkbox-group">
+  <div class="checkbox-item">
+    <input type="checkbox" id="shellfish">
+    <label class="checkbox-label" for="shellfish">Shellfish</label>
+  </div>
   <div class="checkbox-item">
     <input type="checkbox" id="other-allergies">
     <label class="checkbox-label" for="other-allergies">Other</label>
-    <input type="text" placeholder="Specify">
+    </div>
   </div>
 </div>
+</div>
+</div>
 
-<button class="submit-button">Submit</button>
+<center><button class="submit-button">Submit</button></center>
 
 </body>
 </html>
