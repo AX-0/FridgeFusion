@@ -1,0 +1,25 @@
+<html>
+    <script src="https:pip//cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allan&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <head>
+        <style>
+            button{
+            display: block;
+            margin: 0 auto;
+        }
+        </style>
+    </head>
+
+    <body>
+        <section class="text-gray-600 body-font">
+            <div  class="h-screen flex items-center justify-center">
+                <form action="{{ url_for('recipe') }}" method="GET">
+                <button type="submit" class="bg-yellow-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded font-Allan">Start</button>
+                </form>
+            </div>
+          </section>
+      </body>
+</html>

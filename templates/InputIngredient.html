@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Allan&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: "Allan", sans-serif;
+    background-color: #F7EDE2;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 70pt;
+    height: 70pt;
+  }
+
+  .title {
+    font-size: 70pt;
+    margin-left: 20px;
+  }
+
+  .input-section {
+    margin-top: 50px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #F5CAC3;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    font-size: 35pt;
+    margin-top: 20px;
+  }
+
+  .checkbox-row {
+    display: flex;
+    gap: 20px; /* Gap between checkbox groups */
+  }
+
+  .checkbox-group {
+    font-size: 30pt;
+    display: flex;
+    flex-direction: row;
+    gap: 80px
+  }
+
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-label {
+    margin-left: 10px;
+  }
+
+  .submit-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 35pt;
+    background-color: #84A59D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo2.png" alt="Logo" class="logo">
+  <h1 class="title">Enter Ingredients</h1>
+</div>
+
+<div class="input-section">
+  <input type="text" placeholder="Enter ingredients...">
+</div>
+
+<div class="section-title">Dietary Requirements</div>
+<div class="checkbox-row">
+<div class="checkbox-group">
+  <div class="checkbox-item">
+    <input type="checkbox" id="Vegan">
+    <label class="checkbox-label" for="vegan">Vegan</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" id="Vegetarian">
+    <label class="checkbox-label" for="Vegetarian">Vegetarian</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" id="Halal">
+    <label class="checkbox-label" for="Halal">Halal</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" id="Kosher">
+    <label class="checkbox-label" for="Kosher">Kosher</label>
+  </div>
+</div>
+</div>
+<div class="checkbox-row">
+<div class="checkbox-group">
+  <div class="checkbox-item">
+    <input type="checkbox" id="Lactose-free">
+    <label class="checkbox-label" for="Lactose-free">Lactose-free</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" id="Gluten-free">
+    <label class="checkbox-label" for="Gluten-free">Gluten-free</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" id="other-dietary">
+    <label class="checkbox-label" for="other-dietary">Other</label>
+    <input style="margin-left:20px" type="text" placeholder="Specify">
+  </div>
+</div>
+</div>
+
+<div class="section-title">Allergies</div>
+<div class="checkbox-group">
+  <div class="checkbox-item">
+    <input type="checkbox" id="wheat">
+    <label class="checkbox-label" for="wheat">Wheat</label>
+  </div>
+  <!-- Add more checkboxes here -->
+
+  <div class="checkbox-item">
+    <input type="checkbox" id="other-allergies">
+    <label class="checkbox-label" for="other-allergies">Other</label>
+    <input type="text" placeholder="Specify">
+  </div>
+</div>
+
+<button class="submit-button">Submit</button>
+
+</body>
+</html>
