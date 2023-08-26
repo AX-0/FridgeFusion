@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, url_for, redirect
+from flask import Blueprint, render_template, request, url_for, redirect, session
 from flask import Flask
 import markdown
 from chat import Chat 
@@ -6,10 +6,11 @@ from chat import Chat
 app = Flask(__name__)
 
 # views = Blueprint(__name__, "views")
-ingredients = []
+# ingredients = []
 # dietary = []
 # allergies = []
-
+app.secret_key = "THIS_IS_BAD"
+# session = {}
 @app.route("/", methods=['POST', 'GET'])
 def home():
     return render_template("HomePage.html")
@@ -25,30 +26,43 @@ def input():
 @app.route('/recipe', methods = ['POST', 'GET'])
 def recipe():
     if request.method == "POST":
-        ingredients = request.form.get("ingredients")
-        dietary = request.form.getlist("dietary")
-        allergies = request.form.getlist("allergies")
+        session['ingredients'] = request.form.get("ingredients")
+        session['dietary'] = request.form.getlist("dietary")
+        session['allergies'] = request.form.getlist("allergies")
         
 
-        if len(dietary) == 0:
-            dietary = ["No Dietary Requirements"]
-        elif len(allergies) == 0:
-            allergies = ["There is no allergy requirement"]
+        if len(session['dietary']) == 0:
+            session['dietary'] = ["No Dietary Requirements"]
+        elif len(session['allergies']) == 0:
+            session['allergies'] = ["There is no allergy requirement"]
         
-        gpt = Chat(ingredients, dietary, allergies)
+        gpt = Chat(session['ingredients'], session['dietary'], session['allergies'])
         prompt = gpt.prompt_creation()
         gpt.ask_gpt(prompt)
         markdown_text = ""
         with open("test.md", 'r') as f:
             markdown_text = f.read()
-        # print(markdown_text)
+      
         return render_template(
             "Recipe.html",
-            ingredients=ingredients,
-            dietary=dietary,
-            allergies=allergies,
+            ingredients=session['ingredients'],
+            dietary=session['dietary'],
+            allergies=session['allergies'],
             markdown_content=markdown.markdown(markdown_text)
         )
-    return render_template("Recipe.html")
+    else:
+        gpt = Chat(session['ingredients'], session['dietary'], session['allergies'])
+        prompt = gpt.prompt_creation()
+        gpt.ask_gpt(prompt)
+        markdown_text = ""
+        with open("test.md", 'r') as f:
+            markdown_text = f.read()
+        return render_template(
+            "Recipe.html",
+            ingredients=session['ingredients'],
+            dietary=session['dietary'],
+            allergies=session['allergies'],
+            markdown_content=markdown.markdown(markdown_text)
+        )
 
 

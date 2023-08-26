@@ -1,45 +1,27 @@
+**Dietary Requirements:**
+- None specified
+
 **Allergies:**
+- None specified
 
-- Beef
+---
 
-**Unused ingredients:**
+## Leftover Beef and Corn Casserole
 
-- Pork
+**Ingredients:**
+- 200g cooked beef, thinly sliced
+- 150g canned corn kernels, drained
+- 100g frozen peas
+- 150g shredded cheese (cheddar or mozzarella)
 
-**Recipes:**
+**Instructions:**
 
-1. **Pork and Vegetable Stir-Fry**
-   - Ingredients:
-     - 300g pork, sliced
-     - Assorted vegetables (carrots, bell peppers, broccoli, etc.), sliced
-     - Soy sauce
-     - Garlic, minced
-     - Ginger, grated
-     - Cooking oil
-   - Instructions:
-     1. Heat a tablespoon of cooking oil in a pan or wok over medium-high heat.
-     2. Add the sliced pork and stir-fry until cooked through. Remove from the pan and set aside.
-     3. In the same pan, add another tablespoon of oil if needed, then stir-fry the vegetables until slightly tender.
-     4. Push the vegetables to the side and add the minced garlic and grated ginger to the center of the pan. Saut� for a minute until fragrant.
-     5. Mix the vegetables and aromatics together, then add the cooked pork back into the pan.
-     6. Season with soy sauce to taste and stir-fry for a minute or two until everything is well combined and heated through.
-     7. Serve the pork and vegetable stir-fry hot with steamed rice or noodles.
+1. Preheat the oven to 180°C (350°F).
+2. In a baking dish, combine the cooked beef, corn kernels, and frozen peas.
+3. Sprinkle the shredded cheese over the top.
+4. Bake in the preheated oven for 15-20 minutes, or until the cheese is melted and bubbly.
+5. Remove from the oven and let it cool for a few minutes before serving.
 
-2. **Pork and Bean Burrito**
-   - Ingredients:
-     - 300g pork, cooked and shredded
-     - Cooked rice
-     - Canned black beans, rinsed and drained
-     - Flour tortillas
-     - Salsa or hot sauce (optional)
-     - Shredded cheese (optional)
-     - Sour cream (optional)
-   - Instructions:
-     1. Warm the flour tortillas either in a microwave or on a dry heated skillet.
-     2. Lay a tortilla flat and spoon a portion of cooked rice onto the center.
-     3. Add a scoop of shredded pork and a handful of black beans on top of the rice.
-     4. Optional: Add salsa or hot sauce, shredded cheese, and sour cream to taste.
-     5. Fold in the sides of the tortilla and then roll it up tightly, tucking in the fillings as you go.
-     6. Serve the pork and bean burrito warm and enjoy as is or with a side of salad.
-
-Both recipes can be customized by adding more vegetables, spices, or condiments according to personal preference. Enjoy your meals!
+Optional variations:
+- You can add cooked pasta or rice to make it a full meal.
+- Sprinkle some dried herbs (such as thyme or oregano) over the casserole before baking for extra flavor.
