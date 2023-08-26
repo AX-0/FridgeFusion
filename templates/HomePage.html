@@ -7,11 +7,17 @@
     <link rel="icon" type="image/x-icon" href="static/logo_favicon.ico">
     <head>
         <style>
-            button{
-            display: block;
-            margin: 0 auto;
-            font-family: "Allan", sans-serif;
-        }
+            button {
+                display: block;
+                margin: 0 auto;
+                font-family: "Allan", sans-serif;
+            }
+
+            body {
+                background-image: url({{ url_for('static', filename='homebg.png') }});
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         </style>
     </head>
 
@@ -22,6 +28,6 @@
                 <button type="submit" class="bg-yellow-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded font-Allan">Start</button>
                 </form>
             </div>
-          </section>
-      </body>
+        </section>
+    </body>
 </html>
