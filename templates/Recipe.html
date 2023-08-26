@@ -108,7 +108,7 @@
     gap: 5px;
   }
 
-  .instagram-icon {
+  .twitter-icon {
     width: 20px;
     height: 20px;
   }
@@ -138,9 +138,9 @@
   </a>
   </div>
   <div class="indivbutton">
-  <a href="#" id="insta-dm-share">
-      <img src="instagram-icon.png" alt="Instagram Direct Message" class="instagram-icon">
-      Share on Instagram
+  <a href="#" id="twitter-share">
+      <img src="twitter-icon.png" alt="Twitter Share Post" class="twitter-icon">
+      Share on X (Twitter)
   </a>
   </div>
 </div>
@@ -172,15 +172,14 @@
 
 <script>
   document.getElementById('fb-messenger-share').addEventListener('click', function() {
-      var shareUrl = 'https://www.facebook.com/dialog/send?app_id=dotori0409&link=' + encodeURIComponent(window.location.href);
+      var shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href);
       window.open(shareUrl, '_blank', 'width=600,height=400');
   });
 
-  document.getElementById('insta-dm-share').addEventListener('click', function() {
-      var instaUsername = 'do_02v';
-      var shareUrl = 'https://www.instagram.com/' + instaUsername + '/?utm_source=ig_web_copy_link';
+  document.getElementById('twitter-share').addEventListener('click', function() {
+      var shareUrl = 'https://twitter.com/share?url=http:' + encodeURIComponent(window.location.href) + '&text=This is awesome!';
       window.open(shareUrl, '_blank', 'width=600,height=400');
   });
-</script>
+
 </body>
 </html>
