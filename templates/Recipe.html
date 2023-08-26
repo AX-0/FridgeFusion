@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 30px;
+    padding: 20px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 40px;
   }
@@ -34,13 +34,6 @@
     height: 40pt;
     margin-right: 20px;
     border-radius: 10px;
-  }
-
-  .bigcontainer {
-    background-color: F5CAC3;
-    margin-left: 40px;
-    margin-right: 40px;
-
   }
 
   .container {
@@ -89,17 +82,68 @@
     cursor: pointer;
     border-radius: 10px;
   }
+
+  .share-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .indivbutton {
+    margin-left: 10px;
+    text-align: right;
+  }
+
+  .share-button button,
+  .share-button a {
+    background-color: #F7EDE2;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    gap: 5px;
+  }
+
+  .instagram-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .facebook-icon {
+    width: 20px;
+    height: 20px;
+  }
+
 </style>
 </head>
 
 <body>
 
 <div class="header">
-    <img src="/static/logo.png" alt="Logo" class="logo">
+  <a href="HomePage.html">
+    <img src="logo.png" alt="Logo" class="logo"></a>
     
 </div>
 <div class="title">Recipe Name</div>
 
+<div class="share-button">
+  <div class="indivbutton">
+  <a href="#" id="fb-messenger-share">
+      <img src="facebook-icon.png" alt="Facebook Messenger" class="facebook-icon">
+      Share on Facebook
+  </a>
+  </div>
+  <div class="indivbutton">
+  <a href="#" id="insta-dm-share">
+      <img src="instagram-icon.png" alt="Instagram Direct Message" class="instagram-icon">
+      Share on Instagram
+  </a>
+  </div>
+</div>
 
 <div class="parent">
 <div class="container">
@@ -126,5 +170,17 @@
   <button class="button">Order ingredients</button>
 </div>
 
+<script>
+  document.getElementById('fb-messenger-share').addEventListener('click', function() {
+      var shareUrl = 'https://www.facebook.com/dialog/send?app_id=dotori0409&link=' + encodeURIComponent(window.location.href);
+      window.open(shareUrl, '_blank', 'width=600,height=400');
+  });
+
+  document.getElementById('insta-dm-share').addEventListener('click', function() {
+      var instaUsername = 'do_02v';
+      var shareUrl = 'https://www.instagram.com/' + instaUsername + '/?utm_source=ig_web_copy_link';
+      window.open(shareUrl, '_blank', 'width=600,height=400');
+  });
+</script>
 </body>
 </html>
