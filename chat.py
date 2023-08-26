@@ -35,7 +35,6 @@ class Chat:
         return answer
 
 
-
     ########################## test #############################
 
     # test_ingredient = ["milk", "bread", "fried egg", "steak"]

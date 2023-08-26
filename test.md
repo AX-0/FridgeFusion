@@ -1,31 +1,45 @@
-**Allergies:** None.
-**Dietary Requirements:** None.
+**Allergies:**
 
----
+- Beef
 
-Here's a recipe using tomato and potato:
+**Unused ingredients:**
 
-## Tomato Potato Soup
+- Pork
 
-**Ingredients:**
-- 4 tomatoes
-- 2 large potatoes
-- 1 onion
-- 2 cloves of garlic
-- 2 cups vegetable broth
-- 1 tablespoon olive oil
-- Salt and pepper to taste
-- Optional toppings: fresh herbs (e.g., basil or parsley)
+**Recipes:**
 
-**Instructions:**
+1. **Pork and Vegetable Stir-Fry**
+   - Ingredients:
+     - 300g pork, sliced
+     - Assorted vegetables (carrots, bell peppers, broccoli, etc.), sliced
+     - Soy sauce
+     - Garlic, minced
+     - Ginger, grated
+     - Cooking oil
+   - Instructions:
+     1. Heat a tablespoon of cooking oil in a pan or wok over medium-high heat.
+     2. Add the sliced pork and stir-fry until cooked through. Remove from the pan and set aside.
+     3. In the same pan, add another tablespoon of oil if needed, then stir-fry the vegetables until slightly tender.
+     4. Push the vegetables to the side and add the minced garlic and grated ginger to the center of the pan. Saut� for a minute until fragrant.
+     5. Mix the vegetables and aromatics together, then add the cooked pork back into the pan.
+     6. Season with soy sauce to taste and stir-fry for a minute or two until everything is well combined and heated through.
+     7. Serve the pork and vegetable stir-fry hot with steamed rice or noodles.
 
-1. Dice the onion and mince the garlic.
-2. Heat the olive oil in a large pot over medium heat.
-3. Add the diced onion and minced garlic. Sauté until the onion becomes translucent.
-4. Peel and dice the potatoes. Add them to the pot and sauté for another 2-3 minutes.
-5. Core and dice the tomatoes. Add them to the pot along with the vegetable broth.
-6. Bring the mixture to a boil, then reduce the heat and simmer for about 15-20 minutes, or until the potatoes are cooked through.
-7. Use an immersion blender or transfer to a countertop blender to puree the soup until smooth. Season with salt and pepper to taste.
-8. Serve hot and garnish with fresh herbs if desired.
+2. **Pork and Bean Burrito**
+   - Ingredients:
+     - 300g pork, cooked and shredded
+     - Cooked rice
+     - Canned black beans, rinsed and drained
+     - Flour tortillas
+     - Salsa or hot sauce (optional)
+     - Shredded cheese (optional)
+     - Sour cream (optional)
+   - Instructions:
+     1. Warm the flour tortillas either in a microwave or on a dry heated skillet.
+     2. Lay a tortilla flat and spoon a portion of cooked rice onto the center.
+     3. Add a scoop of shredded pork and a handful of black beans on top of the rice.
+     4. Optional: Add salsa or hot sauce, shredded cheese, and sour cream to taste.
+     5. Fold in the sides of the tortilla and then roll it up tightly, tucking in the fillings as you go.
+     6. Serve the pork and bean burrito warm and enjoy as is or with a side of salad.
 
-Enjoy your homemade Tomato Potato Soup!
+Both recipes can be customized by adding more vegetables, spices, or condiments according to personal preference. Enjoy your meals!
