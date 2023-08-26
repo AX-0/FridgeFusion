@@ -144,7 +144,7 @@
     </div>
     </div>
   </div>
-<div class="title">Recipe Name</div>
+  <div class="title">Generated Recipe</div>
 
 <div class="share-button">
   <div class="indivbutton">
@@ -162,27 +162,25 @@
 </div>
 
 <div class="parent">
-<div class="container">
-  <div class="section-title">Ingredients</div>
-  <ul>
-    <li>Ingredient 1</li>
-    <li>Ingredient 2</li>
-    <li>Ingredient 3</li>
-  </ul>
-</div>
+  <div class="container">
+      <div class="section-title">Ingredients</div>
+      <ul>
+          {% for ingredient in ingredients.split('\n') %}
+              <li>{{ ingredient }}</li>
+          {% endfor %}
+      </ul>
+  </div>
 </div>
 
 <div class="parent">
-<div class="container">
-  <div class="section-title">Recipe Steps</div>
-  <div id="markdown-content"></div>
-  <div id="md-content">
-    {{ markdown_content|safe }}
+  <div class="container">
+      <div class="section-title">Recipe Steps</div>
+      <div id="markdown-content">
+          <div id="md-content">
+              {{ markdown_content|safe }}
+          </div>
+      </div>
   </div>
-  <!-- <div class="step">Step 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-  <div class="step">Step 2: Nulla id odio a ante consectetur venenatis.</div>
-  <div class="step">Step 3: Sed lacinia turpis vel ante vestibulum tristique.</div> -->
-</div>
 </div>
 
 <div class="buttons">

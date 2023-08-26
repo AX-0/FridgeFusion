@@ -35,8 +35,14 @@ def recipe():
         markdown_text = ""
         with open("test.md", 'r') as f:
             markdown_text = f.read()
-        html_content = markdown.markdown(markdown_text)
-
-    return render_template("Recipe.html", markdown_content=html_content)
+        
+        return render_template(
+            "Recipe.html",
+            ingredients=ingredients,
+            dietary=dietary,
+            allergies=allergies,
+            markdown_content=markdown.markdown(markdown_text)
+        )
+    return render_template("Recipe.html")
 
 
