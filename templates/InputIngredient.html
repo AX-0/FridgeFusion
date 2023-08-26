@@ -50,7 +50,14 @@
 
   .input-section {
     margin-top: 20px;
-    text-align: center
+    margin-left: 300px;
+<<<<<<< HEAD
+    border-radius: 12px;
+=======
+    /* margin-right: auto;  */
+    /* text-align: center; */
+>>>>>>> 49f46f954644049486229979fd1a56d9daddfff6
+    width: 1500px;
   }
   
   input[type="text"] {
@@ -76,7 +83,9 @@
     font-size: 35pt;
     margin-top: 20px;
     margin-left: 20%;
+    align-items: center;
     margin-bottom: 20px;
+    height:50px;
   }
 
   .filter {
@@ -95,18 +104,20 @@
 
   td {
     width: 200px;
+    padding: 8px;
   }
   
 .submit-button {
   display: inline-block;
   padding: 5px 10px;
-  font-size: 20pt;
+  font-size: 21pt;
   background-color: #84A59D;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   cursor: pointer;
   margin-top: 30px;
+  margin-bottom: 30px;
   justify-content: center
 } 
 </style>
@@ -114,6 +125,7 @@
 <body>
 
 <div class="header">
+<<<<<<< HEAD
     <div class="logo">
       <a href="HomePage.html"><img src="logo.png" alt="Logo"></a>
     </div>
@@ -121,27 +133,37 @@
       <h1>Fridge Fusion</h1>
   </div>
   </div>
+=======
+<<<<<<< HEAD
+    <img src="logo.png" alt="Logo" class="logo">
+=======
+  <a href="HomePage.html">
+    <img src="/static/logo.png" alt="Logo" class="logo"></a>
+>>>>>>> 49f46f954644049486229979fd1a56d9daddfff6
+>>>>>>> e1b28d9470996312a2e5a4ec70e7a601379f5bc9
 </div>
 <div class="title">Recipe Details</div>
 
 <div class="input-section">
   <input type="text" placeholder="Enter ingredients...">
 </div>
-
 <div class="section-title">Dietary Requirements</div>
 <div class="table-container">
+
+<from action="/recipe" method = "post">
 <table>
   <tr class="wider-row">
-    <td><input type="checkbox" rel="Vegan" />Vegan</td>
-    <td><input type="checkbox" rel="Vegetarian" />Vegetarian</td>
-    <td><input type="checkbox" rel="Halal" />Halal</td>
-    <td><input type = "checkbox" rel = "Kosher" />Kosher</td>
+    <td><input type="checkbox" name = Dietary, val = Vegan, rel="Vegan" />Vegan</td>
+    <td><input type="checkbox" name = Dietary, val = Vegetarian, rel="Vegetarian" />Vegetarian</td>
+    <td><input type="checkbox" name = Dietary, val = Halal, rel="Halal" />Halal</td>
+    <td><input type = "checkbox" name = Dietary, val = Kosher, rel = "Kosher" />Kosher</td>
   </tr>
   <tr>
-    <td><input type="checkbox" rel="Lactose-free" />Lactose-free</td>
-    <td><input type="checkbox" rel="Gluten-free" />Gluten-free</td>
-    <td><input type = "checkbox" rel="other-dietary">Other
-        <input style="width: 40px; margin-left: 5px; padding: 1px; font-size: 20px;" rel="other-dietary" type="text"></td>  </tr>
+    <td><input type="checkbox" name = Dietary, val = Lactose-free, rel="Lactose-free" />Lactose-free</td>
+    <td><input type="checkbox" name = Dietary, val = Gluten-free, rel="Gluten-free" />Gluten-free</td>
+    <td><input type = "checkbox" name = Dietary, val = other-dietar, rel="other-dietary">Other
+        <input style="width: 40px; margin-left: 5px; padding: 1px; font-size: 20px;" rel="other-dietary" type="text"></td>  
+  </tr>
 </table>
 </div>
 
@@ -150,19 +172,19 @@
 <div class="table-container">
   <table>
     <tr class="wider-row">
-      <td><input type="checkbox" rel="wheat" />wheat</td>
-      <td> <input type="checkbox" rel="nut" />nut</td>
-      <td><input type="checkbox" rel="egg" />Egg</td>
-      <td><input type="checkbox" rel="fish" />Fish</td>
+      <td><input type="checkbox" name = Allergies, val = Wheat, rel="Wheat" />Wheat</td>
+      <td> <input type="checkbox" name = Allergies, val = Nut, rel="Nut" />Nut</td>
+      <td><input type="checkbox" name = Allergies, val = Egg, rel="Egg" />Egg</td>
+      <td><input type="checkbox" name = Allergies, val = Fish, rel="Fish" />Fish</td>
     </tr>
     <tr>
-      <td><input type="checkbox" rel="shellfish" />Shellfish</td>
-      <td><input type = "checkbox" rel="other-dietary">Other
-          <input style="width: 40px; margin-left: 5px; padding: 1px; font-size: 20px;" rel="other-dietary" type="text"></td>  </tr>
+      <td><input type="checkbox" name = Allergies, val = Shellfish, rel="Shellfish" />Shellfish</td>
+      <td><input type = "checkbox" name = Allergies, val = Other, rel="Other">Other
+          <input style="width: 40px; margin-left: 5px; padding: 1px; font-size: 20px;" rel="other-dietary" type="text"></td>  
+      </tr>
   </table>
 </div>
-
-<center><button class="submit-button">Submit</button></center>
-
+<center><button type = "submit" class="submit-button">Submit</button></center>
+</from>
 </body>
 </html>
