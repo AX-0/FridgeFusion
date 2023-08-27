@@ -1,36 +1,42 @@
-**Allergies**: None specified
+**Dietary Requirements:**
+- Halal
+- Gluten-free
 
-**Dietary Requirements**: Vegan
+**Allergies:**
+- Wheat
+- Egg
 
----
-
-### Vegan Cheesy Steak Sandwich
-
-#### Ingredients:
-- 200g vegan steak strips
-- 1 tablespoon olive oil
-- 1 onion, sliced
-- 1 bell pepper, sliced
-- 4 slices of your choice of vegan bread
-- Vegan cheese, grated
-- Vegan mayonnaise
-- Salt and pepper, to taste
-- Optional: Fresh herbs for garnish (e.g., parsley, chives)
-
-#### Instructions:
-1. Heat the olive oil in a pan over medium heat. Add the onion and bell pepper slices and sauté until they become soft and slightly caramelized. Remove from the pan and set aside.
-2. In the same pan, add the vegan steak strips and cook according to package instructions until heated through.
-3. While the steak strips are cooking, toast the slices of vegan bread.
-4. Spread vegan mayonnaise on one side of each toast slice.
-5. Layer the cooked onion and bell pepper mixture on top of two of the bread slices with mayonnaise.
-6. Place the cooked vegan steak strips on top of the onion and bell pepper mixture.
-7. Sprinkle grated vegan cheese over the steak strips.
-8. Season with salt and pepper to taste.
-9. Top each sandwich with the remaining slices of bread.
-10. Serve the vegan cheesy steak sandwiches immediately. Optionally, garnish with fresh herbs for added flavor.
-
-Enjoy your vegan cheesy steak sandwich!
+**Ingredients:**
+- Corn
+- Peas
+- Cheese
+- Beef
 
 ---
 
-**Note**: Please make sure to check the ingredients of the vegan steak strips, vegan cheese, and vegan mayonnaise to ensure they meet your dietary requirements and do not contain any ingredients you might be allergic to.
+Here is a recipe that fits your dietary requirements and uses the available ingredients:
+
+## Corn and Beef Stir-Fry with Cheesy Peas
+
+### Ingredients:
+- 300g beef, sliced
+- 1 cup corn kernels
+- 1 cup peas
+- 100g cheese, grated
+- Salt, to taste
+- Black pepper, to taste
+- 2 tablespoons vegetable oil
+
+### Instructions:
+1. Heat the vegetable oil in a large pan over medium heat.
+2. Add the beef slices to the pan and cook until browned and cooked through.
+3. Season the beef with salt and black pepper.
+4. Remove the beef from the pan and set aside.
+5. In the same pan, add the corn kernels and peas.
+6. Stir-fry the corn and peas for about 5 minutes or until they are tender.
+7. Add the cooked beef back into the pan and mix well.
+8. Sprinkle the grated cheese over the beef, corn, and peas mixture.
+9. Cover the pan and let it cook for another 2-3 minutes or until the cheese has melted.
+10. Remove from heat and serve hot.
+
+*Note: If you have any extra ingredients, you can add some sliced bell peppers or onions to the stir-fry for extra flavor and color.*
