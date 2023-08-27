@@ -1,27 +1,36 @@
-**Dietary Requirements:**
-- None specified
+**Allergies**: None specified
 
-**Allergies:**
-- None specified
+**Dietary Requirements**: Vegan
 
 ---
 
-## Leftover Beef and Corn Casserole
+### Vegan Cheesy Steak Sandwich
 
-**Ingredients:**
-- 200g cooked beef, thinly sliced
-- 150g canned corn kernels, drained
-- 100g frozen peas
-- 150g shredded cheese (cheddar or mozzarella)
+#### Ingredients:
+- 200g vegan steak strips
+- 1 tablespoon olive oil
+- 1 onion, sliced
+- 1 bell pepper, sliced
+- 4 slices of your choice of vegan bread
+- Vegan cheese, grated
+- Vegan mayonnaise
+- Salt and pepper, to taste
+- Optional: Fresh herbs for garnish (e.g., parsley, chives)
 
-**Instructions:**
+#### Instructions:
+1. Heat the olive oil in a pan over medium heat. Add the onion and bell pepper slices and sauté until they become soft and slightly caramelized. Remove from the pan and set aside.
+2. In the same pan, add the vegan steak strips and cook according to package instructions until heated through.
+3. While the steak strips are cooking, toast the slices of vegan bread.
+4. Spread vegan mayonnaise on one side of each toast slice.
+5. Layer the cooked onion and bell pepper mixture on top of two of the bread slices with mayonnaise.
+6. Place the cooked vegan steak strips on top of the onion and bell pepper mixture.
+7. Sprinkle grated vegan cheese over the steak strips.
+8. Season with salt and pepper to taste.
+9. Top each sandwich with the remaining slices of bread.
+10. Serve the vegan cheesy steak sandwiches immediately. Optionally, garnish with fresh herbs for added flavor.
 
-1. Preheat the oven to 180°C (350°F).
-2. In a baking dish, combine the cooked beef, corn kernels, and frozen peas.
-3. Sprinkle the shredded cheese over the top.
-4. Bake in the preheated oven for 15-20 minutes, or until the cheese is melted and bubbly.
-5. Remove from the oven and let it cool for a few minutes before serving.
+Enjoy your vegan cheesy steak sandwich!
 
-Optional variations:
-- You can add cooked pasta or rice to make it a full meal.
-- Sprinkle some dried herbs (such as thyme or oregano) over the casserole before baking for extra flavor.
+---
+
+**Note**: Please make sure to check the ingredients of the vegan steak strips, vegan cheese, and vegan mayonnaise to ensure they meet your dietary requirements and do not contain any ingredients you might be allergic to.
